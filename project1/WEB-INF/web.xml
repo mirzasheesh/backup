@@ -1,0 +1,42 @@
+<web-app>
+    <display-name>WebServices By Sheesh</display-name>
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+        <servlet-name>HomeServlet</servlet-name>
+        <servlet-class>HomeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HomeServlet</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BranchServlet</servlet-name>
+        <servlet-class>BranchServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>BranchServlet</servlet-name>
+        <url-pattern>/branches</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>BranchServlet</servlet-name>
+        <url-pattern>/branches/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EmployeeServlet</servlet-name>
+        <servlet-class>EmployeeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EmployeeServlet</servlet-name>
+        <url-pattern>/employees</url-pattern>
+    </servlet-mapping>
+</web-app>
